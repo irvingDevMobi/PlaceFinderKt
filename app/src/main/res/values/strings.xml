@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PlaceFinderKt</string>
+    <string name="main_action_button">Buscar</string>
+    <string name="main_hint">¿Que estas buscando?</string>
 </resources>
