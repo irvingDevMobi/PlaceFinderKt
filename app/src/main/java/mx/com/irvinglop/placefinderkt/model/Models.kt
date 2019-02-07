@@ -19,16 +19,7 @@ data class Response(
 data class Venue(
         val id: String,
         val name: String,
-        //val contact:,
-        val location: Location,
-        //val categories: List<>,
-        val verified: Boolean,
-        /*val stats: ,
-        val beenHere: ,
-        val hereNow: ,*/
-        val referralId: String,
-        val venueChains: List<Any>,
-        val hasPerk: Boolean
+        val location: Location
 )
 
 data class Location(
