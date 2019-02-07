@@ -34,6 +34,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun processResponse(response: String) {
         Log.d("Response", response)
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.mainFragmentContainer,
+                                    mapResultsFragmentNewInstance(response))
+        fragmentTransaction.commit()
     }
 
     private fun processError(error: VolleyError) {
